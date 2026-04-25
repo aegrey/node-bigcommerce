@@ -1,20 +1,22 @@
 # Bigcommerce for Node.js
 
-[![Build Status](https://travis-ci.org/getconversio/node-bigcommerce.svg?branch=master)](https://travis-ci.org/getconversio/node-bigcommerce)
-
 A node module for authentication and use with the BigCommerce API
+
+Forked from rate limit PR in bigcommerce/node-bigcommerce
+Keeping packages updated
+Watching for PRs to source repo and integrating.
 
 ## Installation
 
 To install the module using NPM:
 
 ```
-npm install node-bigcommerce
+npm install github:aegrey/node-bigcommerce
 ```
 
 Or Yarn:
 ```
-yarn add node-bigcommerce
+yarn add github:aegrey/node-bigcommerce
 ```
 
 ## Setup
@@ -22,7 +24,7 @@ yarn add node-bigcommerce
 Include the 'node-bigcommerce' module within your script and instantiate it with a config:
 
 ```javascript
-const BigCommerce = require('node-bigcommerce');
+import BigCommerce from 'node-bigcommerce';
 
 const bigCommerce = new BigCommerce({
   logLevel: 'info',
